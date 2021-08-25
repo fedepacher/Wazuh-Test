@@ -9,8 +9,9 @@ This repository solves Wazuh QA Technical Test
 
 Under Task_3 folder run the next command:
 
+```
 python3 script.py
-
+```
 the expected result is:
 
 ![architecture](images/task3.png)

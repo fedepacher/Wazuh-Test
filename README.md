@@ -21,19 +21,29 @@ the expected result is:
 
 ## Code execution 🚀
 
-Under Task_4/Fixture folder run the next command:
+Under Task_4/Fixture/Module folder run the next command:
 
+```
 pytest -v test_student.py
-
+```
 the expected result is:
 
 ![architecture](images/test_fixture.png)
 
+Under Task_4/Fixture/Class folder run the next command:
+
+```
+pytest -v --log-cli-level=0 classFixture.py
+```
+the expected result is:
+
+![architecture](images/class.png)
 
 Under Task_4/Parametrize folder run the next command:
 
+```
 pytest -v test_math_func_param.py 
-
+```
 the expected result is:
 
 ![architecture](images/test_parametrize.png)

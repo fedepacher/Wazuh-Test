@@ -1,0 +1,39 @@
+{
+    "id": 4,
+    "name": "agent_4",
+    "version": "4.0.1",
+    "os": "centos 8",
+    "inventory": [
+        "virtualbox",
+        "git",
+        "atom"
+    ],
+    "modules": {
+        "fim": {
+            "status": "disabled",
+            "frequency": 25,
+            "eps": 100
+        },
+        "syscollector": {
+            "status": "enabled",
+            "frequency": 12,
+            "eps": 80
+        },
+        "rootcheck": {
+            "status": "enabled",
+            "frequency": 5,
+            "eps": 60
+        },
+        "winevt": {
+            "status": "disabled",
+            "frequency": 35,
+            "eps": 70
+        },
+        "logcollector": {
+            "status": "enabled",
+            "frequency": 55,
+            "eps": 20
+        }
+    },
+    "status": "disconnected"
+}

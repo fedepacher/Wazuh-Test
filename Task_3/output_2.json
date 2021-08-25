@@ -1,0 +1,39 @@
+{
+    "id": 3,
+    "name": "agent_3",
+    "version": "4.0.4",
+    "os": "ubuntu focal",
+    "inventory": [
+        "vscode",
+        "meld",
+        "remmina"
+    ],
+    "modules": {
+        "fim": {
+            "status": "disabled",
+            "frequency": 15,
+            "eps": 300
+        },
+        "syscollector": {
+            "status": "enabled",
+            "frequency": 10,
+            "eps": 10
+        },
+        "rootcheck": {
+            "status": "enabled",
+            "frequency": 25,
+            "eps": 20
+        },
+        "winevt": {
+            "status": "disabled",
+            "frequency": 25,
+            "eps": 50
+        },
+        "logcollector": {
+            "status": "disabled",
+            "frequency": 15,
+            "eps": 30
+        }
+    },
+    "status": "active"
+}

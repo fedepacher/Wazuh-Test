@@ -22,7 +22,7 @@ class Script:
     '''
     def runScript(self, agentN=None):
         try:
-                fileInfo = self.loadAgent('/home/fede/Downloads/Wazuh/Wazuh-Test/Task_3/data.json')
+            fileInfo = self.loadAgent('data.json')
         except FileNotFoundError:
             print("Wrong file or file path")
             exit()

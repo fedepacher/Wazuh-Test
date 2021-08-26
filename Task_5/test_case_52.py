@@ -1,5 +1,7 @@
 from task5_2 import Task5_2
 import pytest
+import logging
+
 
 @pytest.fixture(scope='module')
 def db():
@@ -16,6 +18,7 @@ Test to check database structure
 def test_columns(db): 
     table = 'CLIENTS'
     value_expected = ['id', 'name', 'country', 'age']  
+    logging.info(f'Testing database structure {value_expected}')
     assert value_expected == db.columnExist(table)
     
 '''
@@ -24,6 +27,7 @@ Test to check age values
 def test_ages(db): 
     table = 'CLIENTS'
     column = 'age'
+    logging.info(f'Testing {column} values')
     for i in range(db.countObjects(table)):
         assert db.getObjectByColumn(table, column)[i] > 5
                 
@@ -32,10 +36,11 @@ def test_ages(db):
 Test to check if there is a null value
 '''
 def test_null_values(db):
-    table = 'CLIENTS'   
+    table = 'CLIENTS' 
     columnList = db.columnExist(table)
     numComp = db.countObjects(table)
     for column in columnList:
+        logging.info(f'Testing column {column}')
         for i in range(numComp):
             assert db.getObjectByColumn(table, column)[i] != 'null'
 
@@ -46,5 +51,6 @@ Test to check age values are int type
 def test_ages_type(db): 
     table = 'CLIENTS'
     column = 'age'
+    logging.info(f'Testing {column} column type')
     for i in range(db.countObjects(table)):
         assert type(db.getObjectByColumn(table, column)[i]) == int

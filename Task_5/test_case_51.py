@@ -1,5 +1,5 @@
 import pytest
-from tast5 import Task5
+from tast5_1 import Task5
 import logging
 
 @pytest.mark.parametrize('filename, content',

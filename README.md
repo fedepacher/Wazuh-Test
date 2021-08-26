@@ -59,16 +59,27 @@ the expected result is:
 
 ## Code execution 🚀
 
-Under `Task_5/` folder run the next command:
+Under `Task_5/` folder run the next command to verify that the content of the input files has the expected value.
+
+`{'1.txt': 'a', '2.txt': 'b', '3.txt': 'c', '4.txt':’d’, '5.txt': 'e'}`
 
 ```
-pytest -v --log-cli-level=0 test_case_1.py
+pytest -v --log-cli-level=0 test_case_51.py
 ```
 the expected result is:
 
 ![architecture](images/task5_1.png)
 
 
+Under `Task_5/` folder run the next command to verify `clients.db` file content.
+
+
+```
+pytest -v --log-cli-level=0 test_case_52.py
+```
+the expected result is:
+
+![architecture](images/task5_2.png)
 
 
 ## Author 👥

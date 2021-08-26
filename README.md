@@ -1,13 +1,17 @@
 Wazuh-Test
 ==========
 
-This repository solves Wazuh QA Technical Test 
+This repository solves Wazuh QA Technical Test.
+
+Each task does not have its description to maintain the privacy of the Wazuh test.
+
+This repository is accompanied by a pdf file that details the procedures and results of the resolution of each task. 
 
 # Task 3
 
 ## Code execution 🚀
 
-Under Task_3 folder run the next command:
+Under `Task_3/` folder run the next command:
 
 ```
 python3 script.py
@@ -22,7 +26,7 @@ the expected result is:
 
 ## Code execution 🚀
 
-Under Task_4/Fixture/Module folder run the next command:
+Under `Task_4/Fixture/Module` folder run the next command:
 
 ```
 pytest -v test_student.py
@@ -31,7 +35,7 @@ the expected result is:
 
 ![architecture](images/test_fixture.png)
 
-Under Task_4/Fixture/Class folder run the next command:
+Under `Task_4/Fixture/Class` folder run the next command:
 
 ```
 pytest -v --log-cli-level=0 classFixture.py
@@ -40,7 +44,7 @@ the expected result is:
 
 ![architecture](images/class.png)
 
-Under Task_4/Parametrize folder run the next command:
+Under `Task_4/Parametrize` folder run the next command:
 
 ```
 pytest -v test_math_func_param.py 
@@ -48,6 +52,23 @@ pytest -v test_math_func_param.py
 the expected result is:
 
 ![architecture](images/test_parametrize.png)
+
+
+
+# Task 5
+
+## Code execution 🚀
+
+Under `Task_5/` folder run the next command:
+
+```
+pytest -v --log-cli-level=0 test_case_1.py
+```
+the expected result is:
+
+![architecture](images/task5_1.png)
+
+
 
 
 ## Author 👥

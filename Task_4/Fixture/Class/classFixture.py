@@ -7,6 +7,9 @@ def dummy_data(request):
     request.cls.num2 = 20
     logging.info("Execute fixture")
 
+'''
+Class that use dummy_data method to initialize variable that will be used in both test
+'''
 @pytest.mark.usefixtures("dummy_data")
 class TestCalculatorClass:
     def test_distance(self):

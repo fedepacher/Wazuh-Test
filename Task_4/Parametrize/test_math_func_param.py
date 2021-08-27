@@ -1,6 +1,9 @@
 import math_func
 import pytest
 
+'''
+Test add function tu sum variable
+'''
 @pytest.mark.parametrize('num1, num2, result',
                         [
                             (7, 3, 10),

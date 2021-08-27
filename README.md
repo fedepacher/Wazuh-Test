@@ -9,6 +9,17 @@ Each task does not have its description to maintain the privacy of the Wazuh tes
 
 This repository is accompanied by a pdf file that details the procedures and results of the resolution of each task. 
 
+
+# Task 1
+
+Under `Task_1/` folder you will find all the images of the steps to achieve the goal of this task. In the pdf file, that is not in this repository in order to mantain the privacy of the Wazuh test, you will find the requested information about this task.
+
+
+# Task 2
+
+Under `Task_2/` folder you will find all the images of the steps to achieve the goal of this task. In the pdf file, that is not in this repository in order to mantain the privacy of the Wazuh test, you will find the requested information about this task.
+
+
 # Task 3
 
 ## Code execution 🚀
@@ -21,7 +32,6 @@ python3 script.py
 the expected result is:
 
 ![architecture](images/task3.png)
-
 
 
 # Task 4
@@ -54,7 +64,6 @@ pytest -v test_math_func_param.py
 the expected result is:
 
 ![architecture](images/test_parametrize.png)
-
 
 
 # Task 5
